@@ -1,13 +1,52 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
+    <header>
+        <!-- Heading with ARIA role "heading" -->
+        <h1 role="heading">My Portfolio</h1>
+        <!-- Navigation bar with ARIA role "navigation" -->
+        <nav role="navigation">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Image with ARIA role "img" and alt text for accessibility -->
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fcute-girls&psig=AOvVaw3Q9G1Rn5orNCxB1Q4nKMwo&ust=1693730673565000&source=images&cd=vfe&opi=89978449&ved=0CA4QjRxqFwoTCIDplcvEi4EDFQAAAAAdAAAAABAE" alt="A picture of me" role="img">
+        
+        <!-- Brief description with appropriate text -->
+        <p>Welcome to my portfolio. I am passionate about web development and design.</p>
+        
+        <!-- List with ARIA role "list" and list items with ARIA role "listitem" -->
+        <section id="portfolio">
+            <h2 role="heading">Portfolio</h2>
+            <ul role="list">
+                <li role="listitem">Project 1: Responsive Website</li>
+                <li role="listitem">Project 2: Accessible Web App</li>
+                <li role="listitem">Project 3: UX Design</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Contact information -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: tejuc20@gmail.com</p>
+        </section>
+    </footer>
+
+
     <script type="text/javascript" src="./script.js">
 </script>
 
